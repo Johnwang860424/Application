@@ -2,28 +2,56 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>application</title>
+        <title>Application</title>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet">
         <link rel="apple-touch-icon" href="./img/icon.ico">
-        <link rel="icon" href="./img/icon.ico">
+        <link rel="icon" href="img/icon.ico">
         <style>
-            h3{
-                text-align: center;
-                font-family: 'Noto Sans TC', sans-serif;
-                font-weight: bold;
+            body{
+                margin: 0% 10% 0% 10%;
+                background-image: url(img/hallstatt-3609863_1920.jpg);
             }
-            p,li{
-                font-size: 16px;
-                font-family: 'Noto Sans TC', sans-serif;
-                font-weight: normal;
+            header, section{
+                background-color: lightgray;
+            }
+            header h1{
+                border-top: 0px;
+                border-right: 0px;
+                border-left: 0px;
+                border-style: solid;
+            }
+            h1{
+                text-align: center;
+                margin: 0%;
+                padding-top: 10px;
+            }
+            p{
+                line-height: 2;
+                padding: 0 20px 0 20px;
+                margin: 0px;
+            }
+            li{
+                margin-bottom: 0.3em;
+            }
+            ol{
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+            a:visited{
+                color: #FF0000;
+                text-decoration: none;
+            }
+            a:link{
+                color: blue;
+                text-decoration: none;
             }
             @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap');
             .material-icons {
                 font-family: 'Material Icons';
                 font-weight: normal;
                 font-style: normal;
-                font-size: 15px;  /* Preferred icon size */
+                font-size: 20px;  /* Preferred icon size */
                 display: inline-block;
                 line-height: 0;
                 text-transform: none;
@@ -46,23 +74,28 @@
         </style>
     </head>
     <body>
-        <h3><span class="material-icons">description</span>兩百字內的個人簡介。</h3>
-        <p>我是王威翰，目前25歲，還記得大四時初次接觸Python，並以巢狀迴圈跑出九九乘法表跟星星三角形時，第一次體驗程式語言迷人之處。畢業後先後任職臺灣銀行及誠得有限公司，進入臺灣銀行後，發現自己並不適合公務體系內制式且官僚的作風，故離開臺灣銀行。我熱愛學習有趣的事物，儘管是不熟悉的領域。</p>
-        <h3><span class="material-icons">engineering</span>為了成為軟體工程師，曾做過什麼努力？若有具體專案作品請分享給我們。</h3>
-        <p>在離開臺銀後，有參加勞動部的舉辦的<a href="./img/certificate.pdf" target="_blank">產業小尖兵計畫</a>，內容涵蓋金融及AI；而最近則是參加了一場<a href="./img/workshop.pdf" target="_blank">明新科大研習</a>，內容是關於Python的應用。平時我會透過youtube, udemy等線上平台自學Python、html、css及Javascript。任職誠得有限公司期間，亦利用Python寫過兩個小工具。</p>
-        <ol>
-            <li>使用tkinter套件做出論壇自動回文工具</li>
-            <li>串接<a href="https://github.com/Johnwang860424/momoAPI" target="_blank">MoMoAPI</a>取得訂單資料，再串接Line Notify及gmail定時通知相關資訊給公司人員</li>
-        </ol>
-        <h3><span class="material-icons">school</span>如果參與這個計畫，會怎麼安排學習時間？</h3>
-        <p>我的經驗裡，自學程式是需要花費大量時間去熟悉並理解背後的邏輯的，所以如果我有幸參與此計畫，我會將停止我目前的工作，全力投入此計畫，跨領域不是一件容易的事情，就像彭彭老師，以期得到最好的學習效果並完成最後的專案。</p>
-        <h3><span class="material-icons">business</span>是否有想要加入的軟體公司？為什麼想加入該公司？</h3>
-        <p>Dcard，擁有超過600萬會員的匿名社群平台，提供年輕族群交流意見的管道，而我在大學時也常常使用Dcard，它提供我各種獲取議題及資訊的管道，儼然扮演著年輕世代PTT的角色。而其獨特的抽卡制度，能夠讓不同領域的學生結交新的朋友。創辦人目前年僅31歲，早在大學時就已經創辦Dcard，整間公司給我的感覺充滿創新文化，故希望能在這樣的氛圍中工作。</p>
-        <h3><span class="material-icons">report_problem</span>請描述一件你曾經碰到最困難的事情，如何克服？</h3>
-        <p>當時躊躇是否離開臺灣銀行，作為臺銀員工的好處是穩定且固定調薪的公務人員，但卻不是自己想要的工作。而離職雖然可以選擇往喜歡的路前進，卻也會面對未知的未來。把想法分享給身旁的親友時，他們都認為公家機關是鐵飯碗，每年穩定調薪，且工作時間固定，他們都勸說我繼續待著，過安穩的生活。但在我內心深處知道自己理想的生活是什麼。Will Smith在電影The Pursuit of Happyness對他兒子說 "You got a dream,you gotta protect it." 如此激勵人心的一段話，也激勵了我做出勇敢的決定。</p>
-        <h3><span class="material-icons">code</span>關於這份申請網頁，請分享一個你開發時的技術心得。</h3>
-        <p>最近剛好在udemy學html的課程，且在<a href="https://ithelp.ithome.com.tw/articles/10259505" target="_blank">2021 iThome鐵人賽的文章</a>有看到有人分享利用GitHub Page建立簡單的個人網站，能把學到的技能融會貫通地運用在申請網頁上，又為了將網頁弄得更美觀，用google fonts、google icon等等，最後看到網頁順利發佈在網路上時很有成就感。</p>
-        <h3><span class="material-icons">question_answer</span>其他想要對我們說的事情？</h3>
-        <p>我會喜歡寫程式很重要的原因是因為有許多公開社群及課程，很多人都願意分享他們的經驗及技術，經過自己學習並理解過後，實作出自己的作品時真的很有成就感。謝謝彭彭願意開辦WeHelp，也謝謝Mentors願意額外花時間指導，也希望自己六個月後能以校友的身分在說明會上分享轉職經驗。</p>
+        <header>
+            <h1><span class="material-icons">topic</span>WeHelp BootCamp Application</h1>
+        </header>
+        <section>
+            <h1><span class="material-icons">description</span>兩百字內的個人簡介。</h1>
+            <p>我是王威翰，目前25歲，還記得大四通識課，初次接觸Python時，以巢狀迴圈跑出九九乘法表跟星號三角形時，第一次體會到程式語言迷人之處。服完兵役後，適逢2020年covid-19疫情，於是決定準備臺灣銀行的考試，而我也順利考取。任職臺灣銀行期間，我發現自己不適合公務體系內一成不變的工作型態，更喜好探索未知的事物，讓自己的每一天有著不一樣的生活體驗。</p>
+            <h1><span class="material-icons">engineering</span>為了成為軟體工程師，曾做過什麼努力？若有具體專案作品請分享給我們。</h1>
+            <p>在離開臺銀後，有參加勞動部的舉辦的<a href="img/certificate.pdf" target="_blank">產業小尖兵計畫</a>，內容涵蓋金融及AI；而最近則是參加了一場<a href="img/workshop.pdf" target="_blank">明新科大研習</a>，內容是關於Python的應用。平時我會透過youtube, udemy等線上平台自學Python、html、css及Javascript。任職誠得有限公司期間，亦利用Python寫過兩個小工具。</p>
+            <ol>
+                <li>使用tkinter套件做出論壇自動回文工具</li>
+                <li>串接<a href="https://github.com/Johnwang860424/momoAPI" target="_blank">MoMoAPI</a>取得訂單資料，再串接Line Notify及gmail定時通知相關資訊給公司人員</li>
+            </ol>
+            <h1><span class="material-icons">school</span>如果參與這個計畫，會怎麼安排學習時間？</h1>
+            <p>在招生說明會裡，彭彭老師說一天可能要花超過10個小時在BootCamp上。第二屆校友的轉職經驗分享，也不難看出四位校友有多努力才有今天的成就。學習程式是需要花費大量時間去熟悉並理解背後的邏輯，所以如果我有幸參與此計畫，我會停止我目前的工作，全力投入此計畫，跨領域不是一件容易的事情，而成功更非一蹴可幾，有一句話是這麼說的：「你必須很努力，才可以看起來毫不費力。」</p>
+            <h1><span class="material-icons">business</span>是否有想要加入的軟體公司？為什麼想加入該公司？</h1>
+            <p>Dcard，擁有超過600萬會員的匿名社群平台，提供年輕族群交流意見的管道，而我在大學時也常常使用Dcard，它提供我各種獲取議題及資訊的管道，儼然扮演著年輕世代PTT的角色。而其獨特的抽卡(交友)制度，更可以讓大學生結交異校或異性朋友。創辦人目前年僅31歲，早在大學時就已經創辦Dcard，整間公司給我的感覺充滿創新文化，故希望能在這樣的氛圍中工作。</p>
+            <h1><span class="material-icons">report_problem</span>請描述一件你曾經碰到最困難的事情，如何克服？</h1>
+            <p>當時躊躇是否離開臺灣銀行，作為臺銀員工的好處是穩定且固定調薪的公務人員，但卻不是自己想要的工作。而離職雖然可以選擇往喜歡的路前進，卻也會面對未知的未來。把想法分享給身旁的親友時，他們都認為公家機關是鐵飯碗，每年穩定調薪，且工作時間固定，他們都勸說我繼續待著，過安穩的生活。但在我內心深處知道自己理想的生活是什麼。Will Smith在電影The Pursuit of Happyness對他兒子說 "You got a dream,you gotta protect it." 如此激勵人心的一段話，也激勵我做出不一樣的決定。</p>
+            <h1><span class="material-icons">code</span>關於這份申請網頁，請分享一個你開發時的技術心得。</h1>
+            <p>最近在udemy學html的課程，且在<a href="https://ithelp.ithome.com.tw/articles/10259505" target="_blank">2021 iThome鐵人賽的文章</a>也有人分享利用GitHub Page建立簡單的個人網站，再加上自己上網摸索及在書上看到的技巧融會貫通地運用在申請網頁上，一步步地將網頁做得越來越好時，內心充滿了喜悅及成就感。</p>
+            <h1><span class="material-icons">question_answer</span>其他想要對我們說的事情？</h1>
+            <p>我會喜歡寫程式很重要的原因是因為有許多公開社群及課程，很多人都願意分享他們的經驗及技術，經過自己學習並理解過後，實作出自己的作品時真的很有成就感。謝謝彭彭願意開辦WeHelp，也謝謝Mentors願意額外花時間回答我所詢問的問題，也希望自己六個月後能以校友的身分在說明會上分享轉職經驗。</p>
+        </section>
     </body>
 </html>
